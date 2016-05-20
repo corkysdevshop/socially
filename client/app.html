@@ -1,14 +1,11 @@
-<ul>
-  <li>
-    <span>Dubstep-Free Zone</span>
-    <p>
-      Can we please just for an evening not listen to dubstep.
-    </p>
-  </li>
-  <li>
-    <span>All dubstep all the time</span>
-    <p>
-      Get it on!
-    </p>
-  </li>
-</ul>
+<div>
+  <ul>
+    <!-- The *ngFor="let party of parties" attribute in the li tag is an Angular repeater directive. The repeater tells Angular to create a li element for each party in the list using the li tag as the template. -->
+    <!-- The expressions wrapped in the double curly braces ( {{party.name}} and {{party.description}} ) will be replaced by the value of the expressions. -->
+    <li *ngFor="let party of parties">
+      {{party.name}}
+      <p>{{party.description}}</p>
+      <p>{{party.location}}</p>
+    </li>
+  </ul>
+</div>
