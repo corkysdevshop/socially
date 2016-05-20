@@ -1,13 +1,1 @@
-<div>
-  <parties-form></parties-form>
-  <ul>
-    <!-- The *ngFor="let party of parties" attribute in the li tag is an Angular repeater directive. The repeater tells Angular to create a li element for each party in the list using the li tag as the template. -->
-    <!-- The expressions wrapped in the double curly braces ( {{party.name}} and {{party.description}} ) will be replaced by the value of the expressions. -->
-    <li *ngFor="let party of parties">
-      {{party.name}}
-      <p>{{party.description}}</p>
-      <p>{{party.location}}</p>
-      <button (click)="removeParty(party)">X</button>
-    </li>
-  </ul>
-</div>
+<router-outlet></router-outlet>
